@@ -1,0 +1,9 @@
+syntax = "proto2";
+package bbdown;
+option go_package = "bbdown-go/internal/pb;pb";
+
+message FawkesReq {
+    optional string appkey = 1;
+    optional string env = 2;
+    optional string sessionId = 3;
+}
